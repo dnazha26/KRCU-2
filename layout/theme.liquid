@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ shop.name }} - Army Cadet Shop</title>
+  <link rel="stylesheet" href="{{ 'styles.scss' | asset_url }}">
+  <script src="{{ 'app.js' | asset_url }}"></script>
+</head>
+<body>
+  <header class="header">
+    <img src="{{ 'logo.png' | asset_url }}" alt="Shop Logo" width="200" />
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/collections">Shop</a></li>
+        <li><a href="/cart">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {{ content_for_layout }}
+  </main>
+
+  <footer class="footer">
+    <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. All Rights Reserved.</p>
+    {% include 'social-media-links' %}
+  </footer>
+</body>
+</html>
