@@ -1,0 +1,18 @@
+[
+  {
+    "type": "header",
+    "content": "General Settings"
+  },
+  {
+    "type": "text",
+    "label": "Shop Name",
+    "id": "shop_name",
+    "default": "Army Cadet Shop"
+  },
+  {
+    "type": "image_picker",
+    "label": "Banner Image",
+    "id": "banner_image",
+    "default": "banner.jpg"
+  }
+]
