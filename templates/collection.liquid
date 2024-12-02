@@ -1,0 +1,11 @@
+<h1>{{ collection.title }}</h1>
+<div class="product-list">
+  {% for product in collection.products %}
+    <div class="product-card">
+      <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+      <h3 class="product-title">{{ product.title }}</h3>
+      <p class="product-price">{{ product.price | money }}</p>
+      <a href="{{ product.url }}" class="cta-button">View Product</a>
+    </div>
+  {% endfor %}
+</div>
