@@ -1,0 +1,19 @@
+{
+  "current": {
+    "name": "Army Cadet Shop",
+    "header": {
+      "background_color": "#4b5320",
+      "logo": "logo.png"
+    },
+    "footer": {
+      "background_color": "#333333"
+    },
+    "button": {
+      "cta_color": "#556b2f"
+    }
+  },
+  "theme": {
+    "version": "1.0.0",
+    "id": "army-cadet-theme"
+  }
+}
