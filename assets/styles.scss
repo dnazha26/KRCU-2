@@ -1,0 +1,54 @@
+/* Define Colors for Camouflage Theme */
+$army-green: #4b5320;
+$camouflage-brown: #556b2f;
+$light-grey: #d3d3d3;
+$dark-grey: #333;
+
+body {
+  font-family: Arial, sans-serif;
+  color: $light-grey;
+  background-color: $dark-grey;
+}
+
+.header {
+  background-color: $army-green;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-banner {
+  background-image: url('assets/banner.jpg');
+  background-size: cover;
+  color: $light-grey;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.cta-button {
+  background-color: $camouflage-brown;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: darken($camouflage-brown, 10%);
+}
+
+.product-card {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.product-price {
+  font-size: 1.2em;
+  color: $army-green;
+}
